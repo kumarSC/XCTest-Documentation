@@ -108,6 +108,7 @@
 				DD2645211B78DF2200C96149 /* Frameworks */,
 				DD2645221B78DF2200C96149 /* Headers */,
 				DD2645231B78DF2200C96149 /* Resources */,
+				DD26453F1B78DF3900C96149 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -187,6 +188,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD26453F1B78DF3900C96149 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "appledoc \\\n--project-name \"XCTest\" \\\n--project-company \"Apple\" \\\n--company-id \"com.apple\" \\\n--output \"./docset\" \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--install-docset \\\n\"/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD2645201B78DF2200C96149 /* Sources */ = {
